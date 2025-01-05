@@ -19,8 +19,8 @@ def draw_koch_curve(order, size=100):
     t.goto(-size / 2, 0)
     t.pendown()
 
-    for i in range(6):
-        t.right(60)
+    for i in range(3):
+        t.right(120)
         koch_curve(t, order, size)
 
     window.mainloop()
