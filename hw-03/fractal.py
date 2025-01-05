@@ -10,17 +10,18 @@ def koch_curve(t, order, size):
             t.left(angle)
 
 
-def draw_koch_curve(order, size=300):
+def draw_koch_curve(order, size=100):
     window = turtle.Screen()
     window.bgcolor("white")
-
     t = turtle.Turtle()
     t.speed(0)
     t.penup()
     t.goto(-size / 2, 0)
     t.pendown()
 
-    koch_curve(t, order, size)
+    for i in range(6):
+        t.right(60)
+        koch_curve(t, order, size)
 
     window.mainloop()
 

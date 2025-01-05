@@ -26,9 +26,12 @@ def copy_files(src, dest):
     else:
         sub_dir_name = src.name.split(".")[-1]
         path_dest_dir = path.join(dest, sub_dir_name)
-        if not path.exists(path_dest_dir):
-            mkdir(path_dest_dir)
-        shutil.copy2(src.absolute(), path_dest_dir + '\\' + src.name)
+        try:
+            if not path.exists(path_dest_dir):
+                mkdir(path_dest_dir)
+            shutil.copy2(src.absolute(), path_dest_dir + '\\' + src.name)
+        except:
+            print("Something went wrong with copying file " + sub_dir_name + " to " + path_dest_dir)
 
 
 def main():
