@@ -42,7 +42,7 @@ def tim_sort(arr):
     return arr
 
 
-test_data = list(range(10))
+test_data = list(range(200))
 
 
 def tim_sort_(x: list):
