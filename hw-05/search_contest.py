@@ -121,12 +121,6 @@ def main():
         "Knuth-Morris-Pratt  no str": [measure_time(kmp_search, article1, non_existing), measure_time(kmp_search, article2, non_existing)],
         "Rabin-Karp": [measure_time(rabin_karp_search, article1, search_string), measure_time(rabin_karp_search, article2, search_string)],
         "Rabin-Karp no str": [measure_time(rabin_karp_search, article1, non_existing), measure_time(rabin_karp_search, article2, non_existing)]
-        #"Boyer-Moore": [measure_time(boyer_moore_search, article2, search_string)],
-       # "Boyer-Moore  no str": [measure_time(boyer_moore_search, article2, non_existing)],
-        #"Knuth-Morris-Pratt": [measure_time(kmp_search, article2, search_string)],
-        #"Knuth-Morris-Pratt  no str": [measure_time(kmp_search, article2, non_existing)],
-        #"Rabin-Karp": [measure_time(rabin_karp_search, article2, search_string)],
-        #"Rabin-Karp no str": [measure_time(rabin_karp_search, article2, non_existing)]
     }
     df = pd.DataFrame(results_article)
     print(df.to_markdown(index=False))
