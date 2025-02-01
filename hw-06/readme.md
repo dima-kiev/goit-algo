@@ -1,9 +1,12 @@
-1)  to setup virtual environment:
+
+1) to setup virtual environment:
 python -m venv .venv
 2) to activate virtual environment on Mac, Linux
 source .venv/bin/activate
 3)  to install required packages
 pip3 install -r requirements.txt
+
+task 1:
 results:
 
 Vertexes: 16
@@ -27,3 +30,9 @@ Paris: 3
 Bonn: 3
 
 ![AllTheRoadsToBerdychiv.png](AllTheRoadsToBerdychiv.png)
+
+
+task2: 
+no diff in steps number on this inp data but he way is slightly different
+
+task 3: 
